@@ -170,7 +170,9 @@ When **Active Directory** is installed on `DC-1`, the **DNS role** is added as w
    - Click “Select users that can remotely access this PC”
    - Add the `Domain Users` group and click **OK** to apply changes
 
-![Enable RDP Access](images/enable-rdp-access.PNG)
+<div align="center">
+  <img src="images/enable-rdp-access.PNG" alt="[Enable RDP access" />
+</div>
 
 3. **Verify Logon via Remote Desktop**
    - Open **Remote Desktop Connection** and connect to `Client-1`
