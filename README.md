@@ -159,8 +159,8 @@ When **Active Directory** is installed on `DC-1`, the **DNS role** is added as w
 > Feel free to replace the sample variable values with your own user information to fit your environment.
 
 <div align="center">
-  <img src="create-users-via-powershell.PNG" alt="Create users via PowerShell" width="45%" />
-  <img src="standard-user-created.PNG" alt="Standard user created" width="45%" />
+  <img src="images/create-users-via-powershell.PNG" alt="Create users via PowerShell" width="45%" />
+  <img src="images/standard-user-created.PNG" alt="Standard user created" width="45%" />
 </div>
 
 <br>
