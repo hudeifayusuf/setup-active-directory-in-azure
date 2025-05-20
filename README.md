@@ -174,6 +174,8 @@ When **Active Directory** is installed on `DC-1`, the **DNS role** is added as w
   <img src="images/enable-rdp-access.PNG" alt="[Enable RDP access" />
 </div>
 
+<br>
+
 3. **Verify Logon via Remote Desktop**
    - Open **Remote Desktop Connection** and connect to `Client-1`
    - Login as the standard user (e.g., `mydomain\joe_doe`)
