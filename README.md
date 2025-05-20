@@ -44,7 +44,7 @@ This project showcases the setup of a Windows Server Active Directory environmen
    - Name: `Client-1`
    - OS: Windows 10
    - Use the same Resource Group and VNet as `DC-1`
-   - Confirm both VMs are in the same VNet (verify using Network Watcher)
+   - Confirm both VMs are in the same VNet
 
 <br>
 
