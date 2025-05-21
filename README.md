@@ -40,6 +40,8 @@ This project showcases the setup of a Windows Server Active Directory environmen
    - Set Private IP address assignment to **Static**
    - Save the configuration
 
+![Set DC-1’s private IP to static](images/set-private-ip-to-static.png)
+
 3. **Create Client VM**
    - Name: `Client-1`
    - OS: Windows 10
@@ -56,7 +58,7 @@ This project showcases the setup of a Windows Server Active Directory environmen
   - On `Client-1`, open **Command Prompt** and run: `ping <DC-1 IP>`
   - Verify that the ping replies are successful, confirming network connectivity
 
-![Verify Network Connectivity](images/verify-network-connectivity.PNG)
+![Verify network connectivity](images/verify-network-connectivity.PNG)
 
 <br>
 
@@ -115,12 +117,14 @@ When **Active Directory** is installed on `DC-1`, the **DNS role** is added as w
    - Set **DNS servers** to **Custom** and enter the static IP of `DC-1`
    - Restart `Client-1` from the Azure Portal
 
+![DNS configuration](images/dns-configuration.png)
+
 2. **Verify DNS Settings**
    - Open **Command Prompt** on `Client-1`
    - Run: `ipconfig /all`
    - Confirm DNS points to the private IP of `DC-1`
 
-![Verify DNS Settings](images/verify-dns-settings.PNG)
+![Verify DNS settings](images/verify-dns-settings.PNG)
 
 3. **Join Client-1 to Domain**
    - Go to **Settings** > **System** > **About**, then click **Rename this PC (Advanced)**.
