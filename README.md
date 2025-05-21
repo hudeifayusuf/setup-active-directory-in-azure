@@ -42,6 +42,8 @@ This project showcases the setup of a Windows Server Active Directory environmen
 
 ![Set DC-1’s private IP to static](images/set-private-ip-to-static.png)
 
+<br>
+
 3. **Create Client VM**
    - Name: `Client-1`
    - OS: Windows 10
@@ -119,12 +121,16 @@ When **Active Directory** is installed on `DC-1`, the **DNS role** is added as w
 
 ![DNS configuration](images/dns-configuration.png)
 
+<br>
+
 2. **Verify DNS Settings**
    - Open **Command Prompt** on `Client-1`
    - Run: `ipconfig /all`
    - Confirm DNS points to the private IP of `DC-1`
 
 ![Verify DNS settings](images/verify-dns-settings.PNG)
+
+<br>
 
 3. **Join Client-1 to Domain**
    - Go to **Settings** > **System** > **About**, then click **Rename this PC (Advanced)**.
