@@ -152,15 +152,16 @@ When **Active Directory** is installed on `DC-1`, the **DNS role** is added as w
       $lastName = "Doe"
       $fullname = "$firstName $lastName"
       $username = "joe_doe"
-      $password = ConvertTo-SecureString "P@ssw0rd123" -AsPlainText -Force
+      $password = "P@ssw0rd123"
       
       # Create AD user
       New-ADUser `
         -GivenName $firstName `
         -Surname $lastName `
         -Name $fullname `
+        -DisplayName $fullname `
         -SamAccountName $username `
-        -AccountPassword $password `
+        -AccountPassword (ConvertTo-SecureString $password -AsPlainText -Force) `
         -PasswordNeverExpires $true `
         -Enabled $true `
         -Path "OU=_EMPLOYEES,$(([ADSI]'').distinguishedName)"
